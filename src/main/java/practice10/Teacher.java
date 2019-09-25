@@ -1,10 +1,7 @@
 package practice10;
 
-import java.util.Arrays;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.ListIterator;
-import java.util.stream.Collectors;
 
 public class Teacher extends Person{
 
