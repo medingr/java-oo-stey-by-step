@@ -20,9 +20,8 @@ public class Klass {
         this.klass = klass;
     }
 
-    public Student assignLeader(Student student){
+    public void assignLeader(Student student){
         leader = student;
-        return leader;
     }
 
     public Student getLeader() {

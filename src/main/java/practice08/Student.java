@@ -29,7 +29,11 @@ public class Student extends Person{
     @Override
     public String introduce(){
         String className = this.getClass().getSimpleName();
-        return super.introduce() + String.format(" I am a %s. I am at Class %d." , className, klass.getNumber());
+
+        if(this == klass.getLeader()){
+             return super.introduce() + String.format(" I am a %s. I am Leader of Class %d." , className, klass.getNumber());
+        }else
+            return super.introduce() + String.format(" I am a %s. I am at Class %d." , className, klass.getNumber());
 
     }
 

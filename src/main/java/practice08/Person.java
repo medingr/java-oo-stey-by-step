@@ -58,9 +58,4 @@ public class Person {
                 id == person.id &&
                 Objects.equals(name, person.name);
     }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(name, age, id);
-    }
 }
